@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="text-center mt-4 m-5">
-      <h1 class="text-capitalize">toto list</h1>
+      <h1 class="text-capitalize">todo list</h1>
       <form class="input-group mb-3">
         <input
           type="text"
@@ -33,10 +33,35 @@
         </button>
       </form>
       <div class="border-top mt-4 pt-4">
-          <h2 class="text-capitalize">Your list</h2>
-          <div class="border p-4 idea">
-            <p class="basicSentence">You have to add your idea</p>
-          </div>
+        <h2 class="text-capitalize">Your list</h2>
+        <div class="border p-4 idea">
+          <ul class="d-flex justify-content-evenly">
+            <li>
+              Selecte all
+              <input
+                class="form-check-input mt-0 me-4 selectAll"
+                type="checkbox"
+              />
+            </li>
+            <li>
+              Only the select
+              <input class="form-check-input mt-0 me-4" type="checkbox" />
+            </li>
+            <li>
+              Only the not select<input
+                class="form-check-input mt-0 me-4"
+                type="checkbox"
+              />
+            </li>
+            <li>
+              delete the selected<input
+                class="form-check-input mt-0 me-4 delSelected"
+                type="checkbox"
+              />
+            </li>
+          </ul>
+          <p class="basicSentence">You have to add your idea</p>
+        </div>
       </div>
     </div>
     <script src="/js/script.js"></script>
