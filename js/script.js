@@ -11,14 +11,19 @@ const onlyNotSelect = document.querySelector(".onlyNotSelect");
 
 function addNewTodo() {
   if (inputText.value !== "" && secondInput.value !== "") {
-    let name = inputText.value.charAt(0).toUpperCase()+inputText.value.slice(1);
+    let name =
+      inputText.value.charAt(0).toUpperCase() + inputText.value.slice(1);
     if (!isNaN(secondInput.value) && isNaN(inputText.value)) {
       idea.insertAdjacentHTML(
         "beforeend",
         `<div class="border justify-content-between m-4 px-4 d-flex align-items-center">
-        <p class="m-0 text-start">Name: ${secondInput.value > 1 ? name+"s" : name}</p>
+        <p class="m-0 text-start">Name: ${
+          secondInput.value > 1 ? name + "s" : name
+        }</p>
         <div class="d-flex align-items-center">
-        <p class ="m-0 me-4 p-3 border border-top-0 border-bottom-0">${secondInput.value}</p>
+        <p class ="m-0 me-4 p-3 border border-top-0 border-bottom-0">${
+          secondInput.value
+        }</p>
         <input class="form-check-input select mt-0 me-4" type="checkbox">
         <img src="../img/trash.svg" class="cursor-pointer trashCan" alt="trash can" />
         </div>`
@@ -37,7 +42,15 @@ function addNewTodo() {
       });
     });
   });
-  
+
+  const trashCan = document.querySelectorAll(".trashCan");
+
+  trashCan.forEach((element) => {
+    element.addEventListener("click", () => {
+      element.parentElement.parentElement.remove();
+    });
+  });
+
   inputText.value = "";
   secondInput.value = "";
   delSelected.checked = false;
@@ -61,14 +74,6 @@ activeUnit.addEventListener("click", () => {
   } else {
     unit.classList.remove("d-block");
   }
-})
-
-const trashCan = document.querySelectorAll(".trashCan");
-
-trashCan.forEach((element) => {
-  element.addEventListener("click", () => {
-    element.parentElement.parentElement.remove();
-  });
 });
 
 function selectAllElement() {
