@@ -5,3 +5,12 @@ img {
 ul {
     list-style: none;
 }
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li input {
+    margin-left: 5px;
+}
