@@ -19,7 +19,7 @@
       <form class="input-group mb-3">
         <input
           type="text"
-          class="form-control w-75 firstInput"
+          class="form-control w-50 firstInput"
           placeholder="Enter a word"
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
@@ -31,6 +31,22 @@
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
         />
+        <div class="btn-group">
+          <button
+            class="btn btn-secondary dropdown-toggle activeUnit"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            unit
+          </button>
+          <ul class="dropdown-menu unit" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Kg (Kilogramme)</a></li>
+            <li><a class="dropdown-item" href="#">G (Gramme)</a></li>
+            <li><a class="dropdown-item" href="#">L (Litre)</a></li>
+          </ul>
+        </div>
         <button
           class="btn btn-outline-secondary"
           type="button"
@@ -45,35 +61,87 @@
           <ul class="d-flex justify-content-evenly">
             <li>
               Select / Unselect all
-              <div class="form-check form-switch d-flex align-items-center ms-2">
-                <input class="form-check-input mt-0 selectAll btnSelect" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+              <div
+                class="form-check form-switch d-flex align-items-center ms-2"
+              >
+                <input
+                  class="form-check-input mt-0 selectAll btnSelect"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckDefault"
+                ></label>
               </div>
             </li>
             <li>
-              Deselect<div class="form-check form-switch d-flex align-items-center ms-2">
-                <input class="form-check-input mt-0 delSelected btnSelect" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+              Deselect
+              <div
+                class="form-check form-switch d-flex align-items-center ms-2"
+              >
+                <input
+                  class="form-check-input mt-0 delSelected btnSelect"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckDefault"
+                ></label>
               </div>
             </li>
             <li>
               Delete the selected
-              <div class="form-check form-switch d-flex align-items-center ms-2">
-                <input class="form-check-input mt-0 deleteSelected btnSelect" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+              <div
+                class="form-check form-switch d-flex align-items-center ms-2"
+              >
+                <input
+                  class="form-check-input mt-0 deleteSelected btnSelect"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckDefault"
+                ></label>
               </div>
             </li>
             <li>
               Only the select
-              <div class="form-check form-switch d-flex align-items-center ms-2">
-                <input class="form-check-input mt-0 onlySelect btnSelect" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+              <div
+                class="form-check form-switch d-flex align-items-center ms-2"
+              >
+                <input
+                  class="form-check-input mt-0 onlySelect btnSelect"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckDefault"
+                ></label>
               </div>
             </li>
             <li>
-              Only the not select<div class="form-check form-switch d-flex align-items-center ms-2">
-                <input class="form-check-input mt-0 onlyNotSelect btnSelect" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+              Only the not select
+              <div
+                class="form-check form-switch d-flex align-items-center ms-2"
+              >
+                <input
+                  class="form-check-input mt-0 onlyNotSelect btnSelect"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckDefault"
+                ></label>
               </div>
             </li>
           </ul>

@@ -51,6 +51,18 @@ const inputSubmit = document.querySelector(".btn-outline-secondary");
 
 inputSubmit.addEventListener("click", addNewTodo);
 
+const activeUnit = document.querySelector(".activeUnit");
+const unit = document.querySelector(".unit");
+
+activeUnit.addEventListener("click", () => {
+  if (!unit.classList.contains("d-block")) {
+    unit.classList.add("d-block");
+    unit.style.top = "2.4rem";
+  } else {
+    unit.classList.remove("d-block");
+  }
+})
+
 const trashCan = document.querySelectorAll(".trashCan");
 
 trashCan.forEach((element) => {
