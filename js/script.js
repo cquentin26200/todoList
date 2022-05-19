@@ -123,15 +123,3 @@ function hideTheSelect() {
 }
 
 onlyNotSelect.addEventListener("click", hideTheSelect);
-
-const showAll = document.querySelector(".showAll");
-
-  showAll.addEventListener("click", () => {
-    const selected = document.querySelectorAll(".select");
-    selected.forEach((element) => {
-      element.parentElement.parentElement.classList.remove("d-none");
-    });
-  });
-
-
-  
